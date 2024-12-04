@@ -1,0 +1,92 @@
+.form-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    min-width: 400px;
+    background-color: rgba(194, 191, 191, 0.5);
+    margin: 20px;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Roboto';
+    color: rgb(56, 50, 50);
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    font-size: 26px;
+    /* margin: 10px 0px; */
+}
+
+.field-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* width: 100%; */
+}
+
+.container-for-field {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+    width: 380px;
+    gap: 10px;
+}
+
+.field-container input {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    color: rgb(32, 29, 29);
+    letter-spacing: 1.5px;
+    /* width: 100%; */
+    height: 34px;
+    border-radius: 4px;
+    border-style: none;
+    padding-left: 8px;
+}
+
+.form-container button {
+    /* width: 100px; */
+    height: 40px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    border-style: none;
+    border-radius: 6px;
+    background-color: rgb(253, 137, 111);
+}
+
+.form-container button:hover {
+    background-color: rgb(251, 99, 65);
+}
+
+.form-container span {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(56, 50, 50);
+}
+
+.underlined {
+    position: relative; /* Для позиционирования псевдоэлемента */
+    display: inline-block;
+    cursor: pointer;
+}
+
+.underlined::after {
+    content: ''; /* Создаём пустой псевдоэлемент */
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Подчеркивание внизу */
+    width: 0; /* Изначальная ширина */
+    height: 2px; /* Толщина подчеркивания */
+    background-color: black; /* Цвет подчеркивания */
+}
+
+.underlined:hover::after {
+    width: 100%; /* При наведении подчеркивание растягивается */
+}
